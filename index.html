@@ -16,9 +16,7 @@
         <img src="images/logo.svg" alt="Huddle">
       </figure>
 
-      <div class="started">
-        <button class="try" type="button">Try It Free</button>
-      </div>
+      <button class="try" type="button">Try It Free</button>
     </header>
     
     <main>
@@ -26,7 +24,10 @@
         <h1>Build The Community Your Fans Will Love</h1>
         <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
           Create connections with your users as you engage in genuine discussion.</p>
-        <button type="button">Get Started For Free</button>
+        
+        <div class="started">
+          <button type="button">Get Started For Free</button>
+        </div>
 
         <figure class="mockups">
           <img src="images/screen-mockups.svg" alt="screen-mockups">
@@ -54,7 +55,7 @@
       </section>
 
       <section class="grow"> <!-- GROW SECTION -->
-        <div class="description">
+        <div class="description-grow">
           <h2>Grow Together</h2>
           <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
             Think of the insightful conversations you miss out on with a feedback form.</p>
@@ -70,7 +71,7 @@
           <img src="images/illustration-flowing-conversation.svg" alt="conversation-illustration">
         </figure>
 
-        <div class="description">
+        <div class="description-convo">
           <h2>Flowing Conversations</h2>
           <p>You wouldn't paginate a conversation in real life, so why do it online? 
             Our threads have just-in-time loading for a more natural flow.</p>
@@ -78,7 +79,7 @@
       </section>
 
       <section class="users"> <!-- USERS SECTION -->
-        <div class="description">
+        <div class="description-users">
           <h2>Your Users</h2>
           <p>It takes no time at all to integrate Huddle with your app's authentication solution. 
             This means, once signed in to your app, your users can start chatting immediately.</p>
@@ -91,17 +92,22 @@
       
       <section class="ready"> <!-- READY SECTION -->
         <h2>Ready To Build Your Community?</h2>
-        <button type="button">Get Started For Free</button>
+
+        <div class="started">
+          <button type="button">Get Started For Free</button>
+        </div>
       </section>
     </main>
 
     <footer> <!-- PAGE FOOTER -->
-      <section>
+      <section class="company-info">
         <figure class="footer-logo">
           <img src="images/logo.svg" alt="Huddle">
         </figure>
         
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+        <div class="disclaimer"> <!-- PSEUDO DISCLAIMER -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+        </div>
 
         <div class="contact"> <!-- CONTACT -->
           <figure class="phone">
@@ -116,16 +122,16 @@
         </div>
 
         <div class="social-media"> <!-- SOCIAL MEDIA -->
-          <div>
+          <div id="facebook">
             <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
           </div>
           
-          <div>
-            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>   
-          </div>
-          
-          <div>
+          <div id="instagram">
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          </div>
+
+          <div id="twitter">
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>   
           </div>
         </div>
       </section>
@@ -136,7 +142,10 @@
 
         <form action="example.html" method="POST">
           <input class="input" type="email" name="email" placeholder="email@example.com" required>
-          <button class="submit" type="submit">Subscribe</button>
+
+          <div class="subscribe-btn">
+            <button class="submit" type="submit">Subscribe</button>
+          </div>
         </form>
       </section>
     </footer>
