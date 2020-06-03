@@ -138,19 +138,23 @@ header {
     width: 30px;
     height: auto;
 }
+
+#curved-img-top-cont {
+    margin: -5px 0;
+}
   
+#curved-img-top {
+    width: 100%;
+}
+
 /* GROW SECTION */
 .grow {
     padding: 6%;
-    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: hsl(192, 100%, 9%);
-    background-image: url("https://assets.codepen.io/4417738/bg-section-top-desktop-1.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    /*background-color: hsl(207, 100%, 98%);*/
+    background-color: hsl(207, 100%, 98%);
 }
   
 .description-grow {
@@ -176,6 +180,7 @@ header {
   
 /* CONVERSATION SECTION */
 .conversation {
+    padding: 8%;
     color: hsl(192, 100%, 9%);
     background-image: url("https://assets.codepen.io/4417738/bg-section-bottom-desktop-1.svg");
     background-repeat: no-repeat;
@@ -211,7 +216,15 @@ header {
 .conversation img {
     width: 400px;
 }
+
+#curved-img-btm-cont {
+    margin: -5px 0;
+}
   
+#curved-img-btm {
+    width: 100%;
+}
+
 /* USERS SECTION */
 .users {
     padding: 6%;
@@ -219,10 +232,7 @@ header {
     align-items: center;
     justify-content: center;
     color: hsl(192, 100%, 9%);
-    background-image: url("https://assets.codepen.io/4417738/bg-section-top-desktop-2.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    /*background-color: hsl(207, 100%, 98%);*/ 
+    background-color: hsl(207, 100%, 98%);
 }
   
 .description-users {
@@ -287,14 +297,27 @@ header {
   
 /* PAGE FOOTER */
 footer {
-    padding: 6%;
     display: flex;
+    flex-direction: column;
+    min-width: 100%;
     color: hsl(207, 100%, 98%);
-    background-image: url("https://assets.codepen.io/4417738/bg-footer-top-desktop.svg");
-    background-repeat: no-repeat;
-    background-color: hsl(192, 100%, 9%);
+}
+
+#curved-img-cont {
+    margin: -5px 0;
+  }
+  
+#curved-img {
+    width: 100%;
 }
   
+#footer-info-box {
+    padding: 5%;
+    display: flex;
+    background-color: hsl(192, 100%, 9%);
+    margin-top: 0;
+}
+
 .company-info {
     width: 90%;
     padding-right: 10%;
@@ -494,7 +517,6 @@ footer {
       padding-top: 30%;
       flex-direction: column-reverse;
       text-align: center;
-      background-image: url("https://assets.codepen.io/4417738/bg-section-top-mobile-1.svg");
     }
     
     .grow img {
@@ -503,7 +525,6 @@ footer {
     
     /* CONVERSATION SECTION */
     .conversation {
-      background-image: url("https://assets.codepen.io/4417738/bg-section-bottom-mobile-1.svg");
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -523,7 +544,6 @@ footer {
       padding-top: 30%;
       flex-direction: column-reverse;
       text-align: center;
-      background-image: url("https://assets.codepen.io/4417738/bg-section-top-mobile-2.svg");
     }
     
     .users img {
@@ -532,7 +552,6 @@ footer {
     
     /* READY SECTION */
     .ready {
-      background-image: url("https://assets.codepen.io/4417738/bg-section-bottom-mobile-2.svg");
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -544,7 +563,6 @@ footer {
     /* PAGE FOOTER */
     footer {
       flex-direction: column-reverse;
-      background-image: url("https://assets.codepen.io/4417738/bg-footer-top-mobile.svg");
     }
     
     .footer-logo img {
