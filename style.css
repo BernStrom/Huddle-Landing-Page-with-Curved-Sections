@@ -321,6 +321,7 @@ footer {
 .company-info {
     width: 90%;
     padding-right: 10%;
+    margin-top: 3%;
 }
   
 .footer-logo {
@@ -561,7 +562,7 @@ footer {
     }
     
     /* PAGE FOOTER */
-    footer {
+    #footer-info-box {
       flex-direction: column-reverse;
     }
     
